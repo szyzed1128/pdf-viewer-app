@@ -91,15 +91,15 @@ export default function HomePage() {
                   <div>
                     <div className="text-xs font-medium text-gray-500 uppercase tracking-wide">PDF 文档</div>
                     <div className="text-xs text-muted-foreground">
-                      {doc.page_count ? `${doc.page_count} 页` : '多页文档'}
+                      {doc.pageCount ? `${doc.pageCount} 页` : '多页文档'}
                     </div>
                   </div>
                 </div>
                 <div className="text-right text-xs text-muted-foreground">
-                  <div>{formatFileSize(doc.file_size)}</div>
+                  <div>{formatFileSize(doc.fileSize)}</div>
                   <div className="flex items-center gap-1 mt-1">
                     <Calendar className="h-3 w-3" />
-                    {formatDate(doc.upload_date)}
+                    {formatDate(doc.uploadDate)}
                   </div>
                 </div>
               </div>
