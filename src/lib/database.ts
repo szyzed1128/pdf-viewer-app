@@ -152,19 +152,23 @@ class Database {
     ];
 
     for (const item of synonymsData) {
-      const existing = await get('SELECT * FROM synonyms WHERE term = ?', [item.term]);
+      const existing = await new Promise((resolve, reject) => {
+        this.db.get('SELECT * FROM synonyms WHERE term = ?', [item.term], (err, row) => {
+          if (err) reject(err);
+          else resolve(row);
+        });
+      });
       if (!existing) {
-        await run('INSERT INTO synonyms (term, synonyms) VALUES (?, ?)', [
+        await run('INSERT INTO synonyms (term, synonyms) VALUES (?, ?)',
           item.term,
           JSON.stringify(item.synonyms)
-        ]);
+        );
       }
     }
   }
 
   private async insertDefaultDocuments() {
     const run = promisify(this.db.run.bind(this.db));
-    const get = promisify(this.db.get.bind(this.db));
 
     const documentsData = [
       {
@@ -206,7 +210,12 @@ class Database {
     ];
 
     for (const doc of documentsData) {
-      const existing = await get('SELECT * FROM documents WHERE id = ?', [doc.id]);
+      const existing = await new Promise((resolve, reject) => {
+        this.db.get('SELECT * FROM documents WHERE id = ?', [doc.id], (err, row) => {
+          if (err) reject(err);
+          else resolve(row);
+        });
+      });
       if (!existing) {
         await run(
           'INSERT INTO documents (id, filename, original_name, file_path, file_size, page_count, extracted_text) VALUES (?, ?, ?, ?, ?, ?, ?)',
@@ -251,8 +260,12 @@ class Database {
 
   // 新增：获取特定页
   async getDocumentPage(documentId: string, pageNumber: number) {
-    const get = promisify(this.db.get.bind(this.db));
-    const page = await get('SELECT * FROM document_pages WHERE document_id = ? AND page_number = ?', [documentId, pageNumber]);
+    const page: any = await new Promise((resolve, reject) => {
+      this.db.get('SELECT * FROM document_pages WHERE document_id = ? AND page_number = ?', [documentId, pageNumber], (err, row) => {
+        if (err) reject(err);
+        else resolve(row);
+      });
+    });
     if (page) {
       return {
         ...page,
@@ -268,13 +281,21 @@ class Database {
   }
 
   async getDocument(id: string) {
-    const get = promisify(this.db.get.bind(this.db));
-    return get('SELECT * FROM documents WHERE id = ?', [id]);
+    return new Promise((resolve, reject) => {
+      this.db.get('SELECT * FROM documents WHERE id = ?', [id], (err, row) => {
+        if (err) reject(err);
+        else resolve(row);
+      });
+    });
   }
 
   async getSynonyms(term: string) {
-    const get = promisify(this.db.get.bind(this.db));
-    const result = await get('SELECT synonyms FROM synonyms WHERE term = ?', [term]);
+    const result: any = await new Promise((resolve, reject) => {
+      this.db.get('SELECT synonyms FROM synonyms WHERE term = ?', [term], (err, row) => {
+        if (err) reject(err);
+        else resolve(row);
+      });
+    });
     return result ? JSON.parse(result.synonyms) : [];
   }
 
