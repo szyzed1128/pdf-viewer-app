@@ -502,7 +502,9 @@ export default function EnhancedPDFViewer({ fileUrl, fileName, totalPages: propT
                 return (
                   <div
                     key={`page_${pageNum}`}
-                    ref={(el) => (pageRefs.current[pageNum] = el)}
+                    ref={(el) => {
+                      pageRefs.current[pageNum] = el
+                    }}
                     data-page={pageNum}
                     className="mb-4 shadow-lg bg-white"
                     style={{ minHeight: isVisible ? 'auto' : '1000px' }}
