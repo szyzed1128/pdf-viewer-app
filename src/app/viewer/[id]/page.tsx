@@ -24,8 +24,8 @@ export default function PDFViewerPage() {
 
   // 动态获取PDF页数
   useEffect(() => {
-    if (document?.file_path) {
-      const filename = document.file_path.split('/').pop()
+    if (document?.filePath) {
+      const filename = document.filePath.split('/').pop()
       if (filename) {
         fetch(`/api/pdf-info/${filename}`)
           .then(response => response.json())
@@ -40,7 +40,7 @@ export default function PDFViewerPage() {
           })
       }
     }
-  }, [document?.file_path])
+  }, [document?.filePath])
 
   const fetchDocument = async (id: string) => {
     try {
@@ -102,13 +102,13 @@ export default function PDFViewerPage() {
               </Link>
               <div className="h-6 border-l border-gray-300"></div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">{document.original_name}</h1>
+                <h1 className="text-xl font-bold text-gray-900">{document.originalName}</h1>
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                  <span>{(dynamicPageCount || document.page_count) ? `${dynamicPageCount || document.page_count} 页` : '多页文档'}</span>
+                  <span>{(dynamicPageCount || document.pageCount) ? `${dynamicPageCount || document.pageCount} 页` : '多页文档'}</span>
                   <span>•</span>
-                  <span>{(document.file_size / (1024 * 1024)).toFixed(1)} MB</span>
+                  <span>{(document.fileSize / (1024 * 1024)).toFixed(1)} MB</span>
                   <span>•</span>
-                  <span>添加于 {new Date(document.upload_date).toLocaleDateString('zh-CN')}</span>
+                  <span>添加于 {new Date(document.uploadDate).toLocaleDateString('zh-CN')}</span>
                 </div>
               </div>
             </div>
@@ -122,8 +122,8 @@ export default function PDFViewerPage() {
                 智能搜索
               </Link>
               <a
-                href={document.file_path}
-                download={document.original_name}
+                href={document.filePath}
+                download={document.originalName}
                 className="inline-flex items-center gap-2 bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors"
               >
                 下载文档
@@ -147,9 +147,9 @@ export default function PDFViewerPage() {
       <div className="container mx-auto px-4 py-6">
         <div className="bg-white rounded-xl shadow-sm p-4">
           <SearchablePDFViewer
-            fileUrl={document.file_path}
-            fileName={document.original_name}
-            totalPages={dynamicPageCount || document.page_count}
+            fileUrl={document.filePath}
+            fileName={document.originalName}
+            totalPages={dynamicPageCount || document.pageCount}
           />
         </div>
       </div>
@@ -170,23 +170,23 @@ export default function PDFViewerPage() {
           <div className="space-y-2 text-sm text-gray-600">
             <div className="flex justify-between">
               <span>文件名:</span>
-              <span className="font-medium truncate ml-2" title={document.original_name}>
-                {document.original_name.length > 20
-                  ? document.original_name.substring(0, 20) + '...'
-                  : document.original_name}
+              <span className="font-medium truncate ml-2" title={document.originalName}>
+                {document.originalName.length > 20
+                  ? document.originalName.substring(0, 20) + '...'
+                  : document.originalName}
               </span>
             </div>
             <div className="flex justify-between">
               <span>文件大小:</span>
-              <span className="font-medium">{(document.file_size / (1024 * 1024)).toFixed(1)} MB</span>
+              <span className="font-medium">{(document.fileSize / (1024 * 1024)).toFixed(1)} MB</span>
             </div>
             <div className="flex justify-between">
               <span>页数:</span>
-              <span className="font-medium">{(dynamicPageCount || document.page_count) || '未知'} 页</span>
+              <span className="font-medium">{(dynamicPageCount || document.pageCount) || '未知'} 页</span>
             </div>
             <div className="flex justify-between">
               <span>添加时间:</span>
-              <span className="font-medium">{new Date(document.upload_date).toLocaleDateString('zh-CN')}</span>
+              <span className="font-medium">{new Date(document.uploadDate).toLocaleDateString('zh-CN')}</span>
             </div>
           </div>
         </div>

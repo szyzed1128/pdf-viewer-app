@@ -272,7 +272,7 @@ export default function SearchPage() {
         </Link>
         <div>
           <h1 className="text-2xl font-bold">搜索文档</h1>
-          <p className="text-muted-foreground">{document.original_name}</p>
+          <p className="text-muted-foreground">{document.originalName}</p>
         </div>
       </div>
 
@@ -438,12 +438,12 @@ export default function SearchPage() {
 
         <div className="lg:col-span-2">
           <SearchablePDFViewer
-            fileUrl={document.file_path}
-            fileName={document.original_name}
+            fileUrl={document.filePath}
+            fileName={document.originalName}
             searchResults={searchResults}
             currentSearchIndex={currentSearchIndex}
             onPageChange={setCurrentPage}
-            totalPages={document.page_count}
+            totalPages={document.pageCount}
             currentPageGroupedCount={getCurrentPageGroupedCount()}
             targetPage={currentPage}
             jumpTrigger={jumpTrigger}
