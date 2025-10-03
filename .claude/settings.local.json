@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Read(//d/workspace/ai01/pythonBaseProject/nlp/**)",
+      "Bash(tree:*)",
+      "Bash(dir:*)",
+      "Bash(find:*)",
+      "Read(//d/workspace/ai01/pythonBaseProject/**)",
+      "Bash(mkdir:*)",
+      "Bash(npm install:*)",
+      "Bash(tasklist)",
+      "Bash(cat:*)",
+      "Bash(test:*)",
+      "Bash(npx tsx:*)",
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(sqlite3:*)",
+      "Bash(git init:*)",
+      "Bash(gh auth:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: 汽车电路图文档库系统\n\n- ✅ Next.js 14 + React 18 + TypeScript\n- ✅ PDF上传、预览、搜索功能\n- ✅ OCR文字识别 (Tesseract.js)\n- ✅ 智能搜索引擎 (同义词匹配、相关度排序)\n- ✅ SQLite数据库\n- ✅ 响应式设计\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git config:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(git filter-branch:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

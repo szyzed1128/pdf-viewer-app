@@ -1,0 +1,76 @@
+- sapug 、 六 缸 国 5:EECU 标 定数 据 中 凸轮 轴 信 号 为 上 逢 沿 触 发。 传感器 1 助 接 pin 37、2 哮 接 pin 52
+:0240 . 四 缸 国 5:EECU 标 定数 据 中 凸轮 轴 信 号 为 下 降 沿 触发 。 传 感 器 1 脚 接 pin 52、2 脚 接 pin 37
+。，, 接 预 热 保险 spn : : B 5
+0260 接 oN 档 继电器 3 9200 基 国 HHEA = 小 Tooe, : ¥ :
+i i —] |， H N 2 R £ 时
+sof] EN Ead [duns] 水 | | 串 :| | 接 仪表 加 到 = 中 « $ sencums on S SEIHANE 4 生机 和 ¢ =
+由 由 sw 人 证 r|  L f ET La ¥ H @ry V 呈 “| 到 X 法 统计 尿 - 电 划 :曲轴 转速 传感器 。 凸轮 对 转速 传 感 司 | 二 E #
+Cil of 全 | 本 | § 晤 1 | 六 国民 入 齐 ， AE 四 引
+| 3 时 人 | | 四 刁 本 划 呈 汪 :ass 和 区 二 辣 可 /可 让 计 罗 条 间 [| 由 了 由 本 直下
+<| < g saf] #| “f-]° E=  B W CN  La w| 3[8] 别 B| ©[¥ a|  SENTER o id 2 可  oW E
+58 g 4 要 /| 目 查 ss| 四 = 情 / 草 晤 芋 7 画 / c=| 可 相生 le BICE: oN ss Sa BI9E EE| od =
+2 2 R| o 5] w|o| ol ololol 小 of =| fc B® | ARloR <l= ET18) Ef 8 sldg S KR 本 = 站， R| ss 下 人 slsssEl -= -| &
+12 10 sl-= 了 | se 了 lzslslslsl 站 sl 可 [ 可 | < 轩 -由 -| ss 四 =| s| 到 下 al<tclen®: ss 引 引 可 富有 号 让 于 B8| zly ®
+pe 加 oo E 天 到 中 于 下 中 时 | 又 悦 引 三 划 引 gl 引 中 ll .到 癌 浊 |  B -  E  = E|
+1 3 HEERERREEEREEE NE 引 §| S|meamaes§C|]  S| 8| F|ME| Se¢ma[T - | 二 二 加 ， 虹 | 二 中 中 小 由 = -|
+2lel o 010305 88 35 4114 68 15 18371232 40 19 38 72 29 47 71 87 13 22 31 67 439121 2690 50 59 395438 53 3 52 33 16 4603 45 15
+- 1 - S - + 了 证
+s 局 < ON ST + + - OFF Epol7 k 端 吕 + Ee17 AD
+Slzl 8 H 上 一 S1+ - 8S2 + 80 64
+吕 8 三 5476 59 49 020406 62 614584 83 44 63 85 S_ - 244457 09434227 28 29 07 2625 47 17 48 18 04 05 3101 32 02
+PCAN olgl 3 a 四 名 R 393 sse sl ss < 司 -全 =fe efer
+sl 2 2 Js 中 下 引 slzizlz slsl dglsl Slsl gl slyl js sls
+加 目 国 四 如 四 图 818| glgl3l o|e| Blzl 5 sl=| ole
+下 下 电 g 到 中。 EEEEEEEIEEEE  EEE E 中 引  E
+oj H 二 过 | 让 量 jj - 国 才 昌 半 洒 于
+TERE' IE w l  E 本 引  I
+接 仪表 线 忆 HH 一 | 天 区- ET 医 贡 | [从 有 | 中 公明 全 | [仆人 生 | [ 伯 2
+寺 寺 局 村 和
+® 5 5b F E & 咸 感 站 H 和 £3 g%
+is By m 本 #@f ad
+=3 二 L- c [一 gd ¥ z BK BX
+® hr 远程 洒 HS 人  £  = 是 时
+® 二 aE E 要 起。 Eg
+GND Hy 初 g2  da
+Be ® “E “于
+委员 = E Ed
+是 A g
+自主 AClH 添 蓝 泵 区 £ 一 &
+0220 0220 0220 4 £ 0220
+10A[] CES ACU 接 ON 档 继电器 3 。” 接 ON 档 细 电 器 3
+0220 人 人
+本 由 由
+2 品 |
+8 叫 S
+1300 0. 75 ip ~
+=SEE 9 四 国 自 ca all 由 办
+尿素 计量 喷射 泵 接 ON 档 继电器 3 二 | | 管 路 加 热 呈 | &
+接 OA 档 继电器 3 接 ON 档 继 昌 强 Upys y |RRELRES 1 g 接 oN 档 继电器 3 接 Ov 档 级 器 ] ， 预 留 尿素 鲜 LT 传 感 器  2 站 ja 8
+3: 口 | 4 [d FEAE A EOE [ 8 二
+; BEDT MR 全 、_ 进 气 1 1 EREE BER noorwe [BE] [&t E92° 四
+to 上 [| T 2 34 温度 舍 感 咕 [|sA HE toa]saf] | f| — s
+局 R|- 四 EEER 四 INN eli 2 只 =| of ®|R|RIR| RR R 同人 =
+一 cl|- ce p S 1 一 Sla :| sl el S 号 cl=|s 本 | <| akmm
+世 二 ° ofw| on| S als 加 图 国 2 = 略图 四 二 辣 因
+引 吕 8 8 8 g Sls| sls 引 到 引 喇 吕 训 到 让 中 下 B| BH§E E s|=| ZO
+一 3 本 与 一 回国 3I3 下 < 于 F4 B483 c4 5 H4 中 三
+1 3732314746 59 0504554560070614290919  212808 23 Tw 交 1 加 半 国 加 1 k4L4 MEIE2 C1C2 D1D2 g4B3CaC 上 到 下 gl e| -
+0x 传 感 出 AcU 55 4 HR 人 0x 传 感 四 OEM 1200), SOR _ s| 了 l sl s
+L H DT + 加 四 四 让 接口 ”1 45321 0.5, L_ H A3 A4 B4 C4 ATCA2 避 eo mhom z| ¢| g| g
+4 43 42 01021617 8 5136 4833 41 40 cs|c| = .s LT 822 0.5。 接 车 身 CAN [2 3 4 HH HL HL LU & 中 | |
+9 S 由
+cg 区 ° 四 5 = 员 olz| g Re 2 o 2p20 < 3 机 六 全 RRARE
+-| = 号 二 S| S - cl s 别人 三 slcs| sls| cl2 =| hid 8 hd Te 一 全
+引 s 2 3 & a 2s AN 引 引 引 避 加 司 slsl B 2 <[g] B
+引 吕 8 3 2 二 33 PCAN 5 3|8 g I g ° J 引 s 3
+由 LIY 日 3 上 2 Ni b A
+目 = 上 二 $ 引
+— 接 后 9 T 二 ap 。 接 诊断 OAN 寺 ob | REEA 区 入 引
+尽 薄 部 热 尿素 管 路 加 热 器 GND 后 处 理 oAN 电磁 有 后 处 理 CAN
+动力 CAN 后 处 理 CAN
+PCAN 诊断 CAN 一
+© GND
+o =
+8 GND
+3|
+GND

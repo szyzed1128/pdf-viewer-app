@@ -1,0 +1,56 @@
+LLD ULLD CTILLLII
+o260 器 注 :所 有 轮 速 传感器 和 角度 传感器 线 均 为 绞 线 , 每 米 最 少 35 绞 E 四
+re F 2 二
+到 & 四 接 ON 档 继电器 2 右 后 轮 Sensor 左前 轮 Sensor 右前 轮 Sensor 。 左 后 轮 Sensor -学 天 本 在 轮 Sensor 举 升 本 有 轮 Sensor ， | as ss :
+: Lan :
+全 全 到 [Lay La EU Cu :WU EU oo 和 :
+of of J% © ® R R 四 Ra ， 相国 国生 R :
+EE Ni 加 由 s s s : =| = 罗 R :
+有 | | 5|2 g 站 g 站 g 2 Lg HIE 8
+中 引 glE S S g B g 引 | 让 中， S| 中 :
+1 2 5 16 3 11 10 8 5 14 11 18 15 14 11 15 12 轩 11 7 8 10 .
++ 一 一 + 一 十 站 一 + + L H 一 ，
+挂车 ABS (EBS) 插座 X1 ABS8+EBD+ASR+HSA|(KNORR) X2 ， Xx3 +ESP X4 :
+HL + S - 一 ， 站 十 一 ;
+4 3 出 上 8 7 2 9 14 1_ 12 6 18 4 5 2 3 1 7 6 4 17_ 12 16 13 9 10 |， 7 6 4 13 9 10 ，， 3 5 4 5 1 2 9 12 6 .
+中 中 eeR olae[~ = B o | To | Te —T1 ，
+引 了 引 引 引 3 3 了 引 3 3 3 引 引 了 : 引 引 习 1 对] | = :
+s ol 可 芭 人 oflm ® 3 3 g gl 当 9 如 本 o| a = 2  - :
+引 引 8 sl 引 §§8 中 水 S 亚 有 § g § § :和 § 本 2 5 = :
+引 引 ” glz EOK 加 让 中 :
+3 =4 已 > : 习 2| 信 [EE] Fe [ee Peer [cz [ [Fr:
+一 接 EBs 目 四 本 8|2 8 八 “ASR 电 磁 辣 ( 后 桥 ) 左前 轮 电磁 阔 。 右前 轮 电磁 阔 。 左 后 轮 电磁 阅 ” 右 后 轮 电磁 阀 “ 举 升 桥 左 轮 电磁 辣 举 升 桥 右 轮 电磁 阔 “，' ASR 电 磁 阅 (前 桥 ) 压力 传感器 (前 桥 ) 压力 传感器 (后 桥 ) 挂车 控制 电磁 闭
+al d 和 人 必 _ 三 己 和 .
+om NA
+仅 HSA 功 能 用
+注 :所 有 轮 速 传感器 和 角度 传感器 线 均 为 绞 线 , 每 米 最 少 35 绞
+0260
+A E E EERHIR
+天 十 十 加 1 4。 5 2 173 0260 0260
+~ 出 前 i 向 角 | 损 角 度 传 感 |
+smowsy 二 | |  EEERAS  shban aaa | 接 ON 档 继电器 4 a of] sos
+站 目 4 3 13 1 4 囊 4
+49 < ° . & 3 ©2 本 故国 ，  ge ge
+° 只 sl 2 2 四 | 中 机 5 四 国 四 站
+s 引 la — S 站 = 加 2 S S 引 了 BELgss
+可 3 中 汉 § § g o ° = g gl g g| 如 RIEIE&EE
+§ § HE d — 引 中 中 EEEIE § h SS 引 引 pEEEER
+17 40 13 和 0 10 18 13 T4 16 四 1 T2 3 4 5 607 8 中 5825 05 ou 本 1 10 9 亲人 由
+的 | | samem | 4 杀 达 及 控制 效 | 5326 0.5 CANL | , 拔 像 头 及 榨 制 和 LDWS ( 含 FCWS) 控制 器 ，[ 摄 侈 头 ] :
+Wnw n So@GY ) wras  wase u 9 1 6 5 9 4 1920 2 12 中 让 : :
+四 二 四
+ol ololkk | 全。 S 加 妆 中 中 。 dp 四 R| R o @
+NIN 3 有 NE = ee 3 让 SEEEREE
+引 引 吧 | 发 中 | 严 g 图 位 | ® g sl sl 于 cs| = Se 中 到 中
+引 下 中 类 到 水 人 机 机 中 严 二 二 中 引 三 olz 引 引 二 | § 中 3
+EEY L Ld 北 由 | 3 B|3 县 v Vov
+B ® [F1 6 52 1 2 3 4 1 2 3 4 四 挂车 EBS 了 引 引 3 四
+® 123.4| .2234 3 z sam
+引 晤 引 拉 及 | | 天 天 | | Ee 3 社区 了 535 下 @o 313 Fia
+引 g 人 2 人 2， N2hatiatnat ay 四 挂车 插座 Pin7_5336 dld
+=— EEE 砷 := ss 引 1 v 仅 用 于 KNORR 的 AEBS 系 统 , vy 一
+二 才 间 站 站 人 eND Sm
+GND 寺中 守 中 守 中 守 中 2 下 引 让 ，
+CIC] ( | .9
+左前 ABS 右前 ABS 。 左 后 ABS 右 后 ABS 左 中 ABS 右 中 ABS 轴 荷 传感器
+传感器 传感器 传感器 传感器 和

@@ -1,0 +1,71 @@
+卧铺 区 开关 控制 车 窗 升 降 / 车 门 处 开关 控制 车 窗 升降
+A6 一 A5: 向 上 A3 一 A2: 向 上
+A5 一 A6: 疝 下 A2 一 A3: 向 下
+jp A4-A5: 向 左 AI-A2: 向 左 wE 机 可
+& As-hd 站 A2-A1: 向 右 0220 0260 = HEg 加
+汪 [二 = [e HE= HE 0240
+同时 短 接 则 用 终 站 -三 | 引 | 坚 | 生 £lE clRIC Ed 1oaf 0240 024 0260
+z = C le5| 2 I5S] -
+SE| CEm |EME® w 由 va 20 | 5
+-| ETE o Ed 时 | 电 | 二 ® = 20A [) BApCHERE 2 5A|
+3 引号 | o| Bo| Bs 3 引 OE| 引 半 3 3 引 3| 5 of 如 @ ol E
+:下 | ES | 二 | 到 3 = slEzl 引 了 Js g 省 = SS 四 国生
+中 起 站 中 败 B me| ¥|w3|§ §3 雪 | 中 3 g 中 £
+AM9AI9 AIOA20 A6  A4 A5 AS AT AZ 加 04 05 07 010 011 012 到 引 引 + & 8
+部 人 站 咱 昌 bo is w [AIY 呈
+3 i DC-DC 流
+A 口 DCM (集成 RKE) B 口 oD Bol = 相 电压 变换 器 丁丁 | gE
+_ _ ca | N 8 = Sls _&
+A8 A7 A11A12A13 A14A15 A16 A17A18 | B10 BI13B12B16B8 B4 _ B11 B5B6 B7 B9 BI B3 B2 c8C9 C2 c3 8 g E- +| Ap |o614 0.5 | THIEZkr de & m) '
+© FEEEEEEEEEEEEEE EE EEE 3 引 了 3 町 E ° | 上 ED 二 HE Ebbosos | ¢ g s
+< 口 ElE] I=1R=] o of o| of o “| > SS °le 一 | 一 He] =3 六 | p616 0.5_| sp#he —)r-+
+二 ° 四 “lolsl £1° as sls 回民 三 忆 国 HE 报 栓 指 示 盯 - 杠 色 4
+25 EEEEREEEEEEEEEEEER EEEEEEEE 下 中 到 中 ] <S o |=ELe 引 s pzos | 上 由
+ES NEEEEEEEEEEEEEE E NANEICEEE 引 引 £8|  &% 如 r olo| ol [ET
+| 六 本 可 | 但 ENENF 1 你 车 | 全 | | 到 | 对 六 守 | 引 B 8 z of —3 <[<| o &1 ol
+E 加 癌 辐 国 园 国 辐 目 辐 国 目 H wE EEBEE =g =g 2 了 = elsl g = T|e
+- g ET2)e| 5p | 国人 守 让 了 &H &H 全 of aa 引 中 g| 有 |
+四 glelblelelelelelal Slnlelel=l| S0 居中 用 同 哥 gs =] 各 是 浊 g at] o =
+| g : :
+y Floflatladoz loelodoBloal, [#l#oklodly | & 下 划 。 划 二 2 2Y[/] = 引 s
+S H 加 国 国 国 国 国 目 g 加 加 上 | | 号 8 E 引 =
+E | EEE[E|R 国 回 目 | 二 BR Natwomgn semnpen 3) 3 I3 =| = 二 二
+= _ _ 司机 例 车 门 开关 加 1 乘客 侧 车 门 开关 二 0100
+: 本 、 征 控 门 锁 执 行 器 -司机 便 \ 人 中 控 门 锁 执 行 器 -乘客 侧
+卧铺 区 开关 控制 车 窗 接 线 同 车 门 区 开关 接线 , 即 开关 并 线 方式
+配 AT 箱 用
+六 Acc 档 继电器 接 ON 档 继电器 2 接 ON 档 继电器 2 ozo ozao
+0210 ， 0210 : 4
+"; 接 AT 箱 : 0220 0260
+;12 孔 过 渡 插 接 件 : 由 5A 2le[E 0260
+1 S 接 ON 档 :10A 2E®
+,空挡 信号 继电器 1 ， joy 是 的 8 一 10A | 10A
+: fir, s 主 副油箱 切换 开关 | | 三 全 全 一 ol
+E : g [TsleleTsT7Ts) as 由 SA[& & ® =
+» ' 到 S| o el 2 [Mka===cirymm 4 4 F &E 起
+接 oN 挡 继电器 1 由 30A ' 著 8| = 由 zw ， ol<= rs =2 | = 撤 党 ~ 5A 中 2
+人 LEN 和 H T E -  S SRY. W
+| < ， 束 三 ， 事 zs 、 应 H 加 5 SS > 只 | 改 ~
+虽 引 3 :人 | 人 2 S| Re| =| | s| s a 发 四
+%8l 8 : S|%| CEYL 他 内 fEE 党 ju 中 ss|s gle|2ls 8 h °
+£9< :| : 中 o 要 H 有 SS g 又 | 又 | 呈 3 =
+蒜 下 ErE : 万 了 | 2 o 518 由“ 由 2 =
+JE | 间 ;要 . .| ，
+贡 : 四 ;各 °l g | §% 主 副油箱 转换 间 1 4 5 人 JRo—— N. l! |
+#2 : dlE oe gl 2 3 时 转向 语音 报警 器 转向 语音 报警 器 s| 3 辐 ! 白 !
+岂 玛 * 部 也 Ni 多 号 ® 十， 四
+g |= ， 到 |& ， 机 ® e| 只 ( 带 CAN) (无 CAN) 8 T18]
+va E] ， 吃 一 盯 ， 引 LE LE sS| s 2 2 4 5 S| wl| | v
+NE ， 北周 :， 忆 H 全 HESES z %, | ， 接 组 合 仪表 A22
+| ¥ ， 让 al ; 路 只 | By 2R © © ol g! 二
+基 习 1o5¢ 了 3 g é #| 目 |
+B :本 : s | =| = & V 二
+Be —  Be 一 1 H 2| ,有 | ¢ 里 邮 归 jl 接 组 全 仪表 92 。 一 g s 站 中 控 锁
+% @ : 于 1 : 号 引 #3l 三 E HEM s S 四 执行 器
+=21 全 1 头 1 三 | 本 1 # 二
+旦 本 一 [了  FA4—T7 罗 引 & §12 四 |
+& 引 | ， Rs # & 州 = = g
+®oy g 3 | : & = 引 3
+. s g = : GND 由 1
+接 空挡 开关 =  | = 二 ， =
+， = ， 接 组 合 仪表 B28

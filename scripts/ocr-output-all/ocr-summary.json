@@ -1,0 +1,93 @@
+{
+  "totalPages": 14,
+  "successPages": 14,
+  "failedPages": 0,
+  "totalCharacters": 29249,
+  "averageConfidence": 40.92857142857143,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "characters": 2902,
+      "confidence": 42,
+      "hasError": false
+    },
+    {
+      "pageNumber": 2,
+      "characters": 1012,
+      "confidence": 43,
+      "hasError": false
+    },
+    {
+      "pageNumber": 3,
+      "characters": 2387,
+      "confidence": 32,
+      "hasError": false
+    },
+    {
+      "pageNumber": 4,
+      "characters": 2206,
+      "confidence": 36,
+      "hasError": false
+    },
+    {
+      "pageNumber": 5,
+      "characters": 2282,
+      "confidence": 48,
+      "hasError": false
+    },
+    {
+      "pageNumber": 6,
+      "characters": 1562,
+      "confidence": 42,
+      "hasError": false
+    },
+    {
+      "pageNumber": 7,
+      "characters": 1364,
+      "confidence": 38,
+      "hasError": false
+    },
+    {
+      "pageNumber": 8,
+      "characters": 979,
+      "confidence": 46,
+      "hasError": false
+    },
+    {
+      "pageNumber": 9,
+      "characters": 2734,
+      "confidence": 40,
+      "hasError": false
+    },
+    {
+      "pageNumber": 10,
+      "characters": 2327,
+      "confidence": 35,
+      "hasError": false
+    },
+    {
+      "pageNumber": 11,
+      "characters": 2138,
+      "confidence": 31,
+      "hasError": false
+    },
+    {
+      "pageNumber": 12,
+      "characters": 896,
+      "confidence": 56,
+      "hasError": false
+    },
+    {
+      "pageNumber": 13,
+      "characters": 3299,
+      "confidence": 41,
+      "hasError": false
+    },
+    {
+      "pageNumber": 14,
+      "characters": 3161,
+      "confidence": 43,
+      "hasError": false
+    }
+  ]
+}
