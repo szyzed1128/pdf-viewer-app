@@ -18,51 +18,79 @@ echo ">>> 安装基础工具..."
 sudo yum install -y curl wget git gcc-c++ make
 
 # 3. 安装Node.js 18.x
-echo ">>> 安装Node.js 18..."
-# 方法1: 使用nodesource仓库
-curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash - 2>/dev/null || {
-    # 方法2: 如果失败,使用dnf module (OpenCloudOS/RHEL 9)
-    echo "尝试使用dnf module安装..."
-    sudo dnf module reset nodejs -y 2>/dev/null || true
-    sudo dnf module enable nodejs:18 -y 2>/dev/null || {
-        # 方法3: 使用EPEL仓库
-        echo "尝试从EPEL安装..."
-        sudo dnf install -y epel-release
-        sudo dnf install -y nodejs npm
+echo ">>> 检查Node.js..."
+if command -v node &> /dev/null; then
+    NODE_VERSION=$(node --version)
+    echo "✓ Node.js已安装: $NODE_VERSION"
+    npm --version
+else
+    echo ">>> 安装Node.js 18..."
+    # 方法1: 使用nodesource仓库
+    curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash - 2>/dev/null || {
+        # 方法2: 如果失败,使用dnf module (OpenCloudOS/RHEL 9)
+        echo "尝试使用dnf module安装..."
+        sudo dnf module reset nodejs -y 2>/dev/null || true
+        sudo dnf module enable nodejs:18 -y 2>/dev/null || {
+            # 方法3: 使用EPEL仓库
+            echo "尝试从EPEL安装..."
+            sudo dnf install -y epel-release
+            sudo dnf install -y nodejs npm
+        }
     }
-}
 
-# 如果还没有nodejs,尝试直接安装
-if ! command -v node &> /dev/null; then
-    sudo yum install -y nodejs || sudo dnf install -y nodejs
+    # 如果还没有nodejs,尝试直接安装
+    if ! command -v node &> /dev/null; then
+        sudo yum install -y nodejs || sudo dnf install -y nodejs
+    fi
+
+    # 验证安装
+    node --version
+    npm --version
 fi
 
-# 验证安装
-node --version
-npm --version
-
 # 4. 安装PM2 (进程管理器)
-echo ">>> 安装PM2..."
-sudo npm install -g pm2
-
-# 配置PM2开机自启
-sudo pm2 startup systemd -u $(whoami) --hp $(eval echo ~$(whoami))
+echo ">>> 检查PM2..."
+if command -v pm2 &> /dev/null; then
+    PM2_VERSION=$(pm2 --version)
+    echo "✓ PM2已安装: $PM2_VERSION"
+else
+    echo ">>> 安装PM2..."
+    sudo npm install -g pm2
+    # 配置PM2开机自启
+    sudo pm2 startup systemd -u $(whoami) --hp $(eval echo ~$(whoami))
+fi
 
 # 5. 安装nginx (Web服务器)
-echo ">>> 安装nginx..."
-sudo yum install -y nginx
-
-# 启动nginx
-sudo systemctl start nginx
-sudo systemctl enable nginx
+echo ">>> 检查nginx..."
+if command -v nginx &> /dev/null; then
+    NGINX_VERSION=$(nginx -v 2>&1)
+    echo "✓ nginx已安装: $NGINX_VERSION"
+else
+    echo ">>> 安装nginx..."
+    sudo yum install -y nginx
+    # 启动nginx
+    sudo systemctl start nginx
+    sudo systemctl enable nginx
+fi
 
 # 6. 安装poppler-utils (PDF处理依赖)
-echo ">>> 安装poppler-utils..."
-sudo yum install -y poppler-utils
+echo ">>> 检查poppler-utils..."
+if command -v pdftoppm &> /dev/null; then
+    echo "✓ poppler-utils已安装"
+else
+    echo ">>> 安装poppler-utils..."
+    sudo yum install -y poppler-utils
+fi
 
 # 7. 安装SQLite3
-echo ">>> 安装SQLite3..."
-sudo yum install -y sqlite
+echo ">>> 检查SQLite3..."
+if command -v sqlite3 &> /dev/null; then
+    SQLITE_VERSION=$(sqlite3 --version | awk '{print $1}')
+    echo "✓ SQLite3已安装: $SQLITE_VERSION"
+else
+    echo ">>> 安装SQLite3..."
+    sudo yum install -y sqlite
+fi
 
 # 8. 配置防火墙
 echo ">>> 配置防火墙..."
