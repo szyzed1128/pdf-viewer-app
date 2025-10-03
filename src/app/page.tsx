@@ -106,21 +106,21 @@ export default function HomePage() {
 
               {/* 文档标题 */}
               <h3 className="font-semibold text-lg mb-3 line-clamp-2 group-hover:text-primary transition-colors">
-                {doc.original_name}
+                {doc.originalName}
               </h3>
 
               {/* 文档描述标签 */}
               <div className="flex flex-wrap gap-1 mb-4">
-                {doc.original_name.includes('电路图') && (
+                {doc.originalName.includes('电路图') && (
                   <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">电路图</span>
                 )}
-                {doc.original_name.includes('使用手册') && (
+                {doc.originalName.includes('使用手册') && (
                   <span className="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">使用手册</span>
                 )}
-                {doc.original_name.includes('线束') && (
+                {doc.originalName.includes('线束') && (
                   <span className="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">线束图</span>
                 )}
-                {doc.original_name.includes('汽车') && (
+                {doc.originalName.includes('汽车') && (
                   <span className="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded-full">汽车</span>
                 )}
               </div>
@@ -146,15 +146,15 @@ export default function HomePage() {
 
                 <div className="flex gap-2">
                   <a
-                    href={doc.file_path}
-                    download={doc.original_name}
+                    href={doc.filePath}
+                    download={doc.originalName}
                     className="flex-1 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium text-center hover:bg-gray-200 transition-all duration-200 flex items-center justify-center gap-2 group"
                   >
                     <Download className="h-4 w-4 group-hover:scale-110 transition-transform" />
                     下载文档
                   </a>
                   <a
-                    href={doc.file_path}
+                    href={doc.filePath}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200 transition-all duration-200 group"
