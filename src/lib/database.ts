@@ -53,8 +53,6 @@ class Database {
   }
 
   private async insertDefaultSynonyms() {
-    const run = promisify(this.db.run.bind(this.db));
-    const get = promisify(this.db.get.bind(this.db));
 
     const synonymsData = [
       {
@@ -159,17 +157,20 @@ class Database {
         });
       });
       if (!existing) {
-        await run('INSERT INTO synonyms (term, synonyms) VALUES (?, ?)',
-          item.term,
-          JSON.stringify(item.synonyms)
-        );
+        await new Promise((resolve, reject) => {
+          this.db.run('INSERT INTO synonyms (term, synonyms) VALUES (?, ?)', [
+            item.term,
+            JSON.stringify(item.synonyms)
+          ], (err) => {
+            if (err) reject(err);
+            else resolve(undefined);
+          });
+        });
       }
     }
   }
 
   private async insertDefaultDocuments() {
-    const run = promisify(this.db.run.bind(this.db));
-
     const documentsData = [
       {
         id: 'doc-001',
@@ -217,42 +218,68 @@ class Database {
         });
       });
       if (!existing) {
-        await run(
-          'INSERT INTO documents (id, filename, original_name, file_path, file_size, page_count, extracted_text) VALUES (?, ?, ?, ?, ?, ?, ?)',
-          [doc.id, doc.filename, doc.originalName, doc.filePath, doc.fileSize, doc.pageCount, doc.extractedText]
-        );
+        await new Promise((resolve, reject) => {
+          this.db.run(
+            'INSERT INTO documents (id, filename, original_name, file_path, file_size, page_count, extracted_text) VALUES (?, ?, ?, ?, ?, ?, ?)',
+            [doc.id, doc.filename, doc.originalName, doc.filePath, doc.fileSize, doc.pageCount, doc.extractedText],
+            (err) => {
+              if (err) reject(err);
+              else resolve(undefined);
+            }
+          );
+        });
       } else {
         // 更新现有文档的页数和文件大小信息
-        await run(
-          'UPDATE documents SET page_count = ?, file_size = ? WHERE id = ?',
-          [doc.pageCount, doc.fileSize, doc.id]
-        );
+        await new Promise((resolve, reject) => {
+          this.db.run(
+            'UPDATE documents SET page_count = ?, file_size = ? WHERE id = ?',
+            [doc.pageCount, doc.fileSize, doc.id],
+            (err) => {
+              if (err) reject(err);
+              else resolve(undefined);
+            }
+          );
+        });
       }
     }
   }
 
   async insertDocument(doc: any) {
-    const run = promisify(this.db.run.bind(this.db));
-    return run(
-      'INSERT INTO documents (id, filename, original_name, file_path, file_size, page_count, extracted_text) VALUES (?, ?, ?, ?, ?, ?, ?)',
-      [doc.id, doc.filename, doc.originalName, doc.filePath, doc.fileSize, doc.pageCount, doc.extractedText]
-    );
+    return new Promise((resolve, reject) => {
+      this.db.run(
+        'INSERT INTO documents (id, filename, original_name, file_path, file_size, page_count, extracted_text) VALUES (?, ?, ?, ?, ?, ?, ?)',
+        [doc.id, doc.filename, doc.originalName, doc.filePath, doc.fileSize, doc.pageCount, doc.extractedText],
+        (err) => {
+          if (err) reject(err);
+          else resolve(undefined);
+        }
+      );
+    });
   }
 
   // 新增：插入文档页数据
   async insertDocumentPage(documentId: string, pageNumber: number, pageText: string, componentNames: string[] = []) {
-    const run = promisify(this.db.run.bind(this.db));
-    return run(
-      'INSERT OR REPLACE INTO document_pages (document_id, page_number, page_text, component_names) VALUES (?, ?, ?, ?)',
-      [documentId, pageNumber, pageText, JSON.stringify(componentNames)]
-    );
+    return new Promise((resolve, reject) => {
+      this.db.run(
+        'INSERT OR REPLACE INTO document_pages (document_id, page_number, page_text, component_names) VALUES (?, ?, ?, ?)',
+        [documentId, pageNumber, pageText, JSON.stringify(componentNames)],
+        (err) => {
+          if (err) reject(err);
+          else resolve(undefined);
+        }
+      );
+    });
   }
 
   // 新增：获取文档的所有页
   async getDocumentPages(documentId: string) {
-    const all = promisify(this.db.all.bind(this.db));
-    const pages = await all('SELECT * FROM document_pages WHERE document_id = ? ORDER BY page_number', [documentId]);
-    return pages.map(page => ({
+    const pages: any = await new Promise((resolve, reject) => {
+      this.db.all('SELECT * FROM document_pages WHERE document_id = ? ORDER BY page_number', [documentId], (err, rows) => {
+        if (err) reject(err);
+        else resolve(rows);
+      });
+    });
+    return pages.map((page: any) => ({
       ...page,
       component_names: page.component_names ? JSON.parse(page.component_names) : []
     }));
@@ -276,8 +303,12 @@ class Database {
   }
 
   async getDocuments() {
-    const all = promisify(this.db.all.bind(this.db));
-    return all('SELECT * FROM documents ORDER BY upload_date DESC');
+    return new Promise((resolve, reject) => {
+      this.db.all('SELECT * FROM documents ORDER BY upload_date DESC', [], (err, rows) => {
+        if (err) reject(err);
+        else resolve(rows);
+      });
+    });
   }
 
   async getDocument(id: string) {
@@ -300,9 +331,13 @@ class Database {
   }
 
   async getAllSynonyms() {
-    const all = promisify(this.db.all.bind(this.db));
-    const results = await all('SELECT * FROM synonyms');
-    return results.map(row => ({
+    const results: any = await new Promise((resolve, reject) => {
+      this.db.all('SELECT * FROM synonyms', [], (err, rows) => {
+        if (err) reject(err);
+        else resolve(rows);
+      });
+    });
+    return results.map((row: any) => ({
       term: row.term,
       synonyms: JSON.parse(row.synonyms)
     }));

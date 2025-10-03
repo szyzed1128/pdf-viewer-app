@@ -28,7 +28,10 @@
       "Bash(git push:*)",
       "Bash(git rm:*)",
       "Bash(git commit:*)",
-      "Bash(git filter-branch:*)"
+      "Bash(git filter-branch:*)",
+      "Bash(xargs sed:*)",
+      "Bash(tee:*)",
+      "Read(//d/**)"
     ],
     "deny": [],
     "ask": []
