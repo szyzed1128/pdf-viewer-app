@@ -287,11 +287,30 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
-### 传统服务器部署
-1. 构建项目：`npm run build`
-2. 上传构建结果到服务器
-3. 安装 PM2：`npm install -g pm2`
-4. 启动应用：`pm2 start npm --name "pdf-app" -- start`
+### 云服务器部署 (推荐)
+
+**完整部署指南**: 查看 [`deploy/README.md`](deploy/README.md)
+
+**快速部署 (3步完成)**:
+
+```bash
+# 1. 下载部署脚本
+wget https://raw.githubusercontent.com/szyzed1128/pdf-viewer-app/master/deploy/setup-server-centos.sh
+wget https://raw.githubusercontent.com/szyzed1128/pdf-viewer-app/master/deploy/deploy-app.sh
+chmod +x setup-server-centos.sh deploy-app.sh
+
+# 2. 配置服务器环境 (CentOS/OpenCloudOS)
+./setup-server-centos.sh
+
+# 如果是Ubuntu/Debian系统,使用:
+# wget https://raw.githubusercontent.com/szyzed1128/pdf-viewer-app/master/deploy/setup-server.sh
+# chmod +x setup-server.sh && ./setup-server.sh
+
+# 3. 部署应用
+./deploy-app.sh
+```
+
+访问 `http://服务器IP:3000` 即可使用!
 
 ## 环境配置
 
