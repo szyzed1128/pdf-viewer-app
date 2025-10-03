@@ -19,8 +19,23 @@ sudo yum install -y curl wget git gcc-c++ make
 
 # 3. 安装Node.js 18.x
 echo ">>> 安装Node.js 18..."
-curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
-sudo yum install -y nodejs
+# 方法1: 使用nodesource仓库
+curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash - 2>/dev/null || {
+    # 方法2: 如果失败,使用dnf module (OpenCloudOS/RHEL 9)
+    echo "尝试使用dnf module安装..."
+    sudo dnf module reset nodejs -y 2>/dev/null || true
+    sudo dnf module enable nodejs:18 -y 2>/dev/null || {
+        # 方法3: 使用EPEL仓库
+        echo "尝试从EPEL安装..."
+        sudo dnf install -y epel-release
+        sudo dnf install -y nodejs npm
+    }
+}
+
+# 如果还没有nodejs,尝试直接安装
+if ! command -v node &> /dev/null; then
+    sudo yum install -y nodejs || sudo dnf install -y nodejs
+fi
 
 # 验证安装
 node --version
